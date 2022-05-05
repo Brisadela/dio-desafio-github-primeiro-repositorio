@@ -5,22 +5,24 @@ import javax.swing.*;
 public class ExCalculadora {
     public static void main(String[] args) {
 
-        // coletando valores ultilizando 
+        // coletando valores ultilizando
         String primeiroNumero =
                 JOptionPane.showInputDialog("Digite primeiro valor");
         String segundoNumero =
                 JOptionPane.showInputDialog("Digite segundo valor");
 
         // ciação variaveis, conversão de variaveis para atribuição
-        Double num1 = Double.parseDouble(primeiroNumero);
-        Double num2 = Double.parseDouble(segundoNumero);
+        Double primeiroValor = Double.parseDouble(primeiroNumero);
+        Double segundoValor = Double.parseDouble(segundoNumero);
 
-        // criando  calculadora
-        Calculadora calculadora = new Calculadora(num1, num2);
+        // criando  calculadora mediante ao uso do contrutor atribuindo valor
+        Calculadora calculadora = new Calculadora(primeiroValor, segundoValor);
+
+        // demostração do que o construtor acima está realizando
+        calculadora.setPrimeiroOperando(primeiroValor);
+        calculadora.setSegundoOperando(segundoValor);
 
 
-        calculadora.setX(num1);
-        calculadora.setY(num2);
 
         //visualização
         JOptionPane.showMessageDialog(null,

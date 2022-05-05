@@ -2,28 +2,28 @@ package br.com.dio.calculadora;
 
 public class Operandos {
 
-    private double x;
-    private double y;
+    private double primeiroOperando;
+    private double segundoOperando;
 
-    public Operandos(double x, double y) {
-        this.x = x;
-        this.y = y;
+    public Operandos(double primeiroOperando, double segundoOperando) {
+        this.primeiroOperando = primeiroOperando;
+        this.segundoOperando = segundoOperando;
     }
 
-    public double getX() {
-        return x;
+    public double getPrimeiroOperando() {
+        return primeiroOperando;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setPrimeiroOperando(double primeiroOperando) {
+        this.primeiroOperando = primeiroOperando;
     }
 
-    public double getY() {
-        return y;
+    public double getSegundoOperando() {
+        return segundoOperando;
     }
 
-    public void setY(double y) {
-        this.y = y;
+    public void setSegundoOperando(double segundoOperando) {
+        this.segundoOperando = segundoOperando;
     }
 
 

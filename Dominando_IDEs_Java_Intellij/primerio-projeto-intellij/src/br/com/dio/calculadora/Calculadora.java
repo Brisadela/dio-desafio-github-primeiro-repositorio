@@ -4,52 +4,52 @@ public class Calculadora extends Operandos {
 
     private double resultado = 0;
 
-    public Calculadora(double x, double y) {
-        super(x, y);
+    public Calculadora(double primeiroOperando, double segundoOperando) {
+        super(primeiroOperando, segundoOperando);
     }
 
     public double soma(){
 
-        return  resultado = this.getX() + this.getY();
+        return  resultado = this.getPrimeiroOperando() + this.getSegundoOperando();
 
     }
 
     public double subtracao(){
 
-        if(this.getX() > this.getY()){
-            resultado = this.getX()-this.getY();
+        if(this.getPrimeiroOperando() > this.getSegundoOperando()){
+            resultado = this.getPrimeiroOperando()-this.getSegundoOperando();
         }else{
-            resultado = this.getY()-this.getX();
+            resultado = this.getSegundoOperando()-this.getPrimeiroOperando();
         }
         return resultado;
     }
 
     public double multiplicacao(){
 
-        if(this.getX() > this.getY()){
-            resultado = this.getX()*this.getY();
+        if(this.getPrimeiroOperando() > this.getSegundoOperando()){
+            resultado = this.getPrimeiroOperando()*this.getSegundoOperando();
         }else{
-            resultado = this.getY()*this.getX();
+            resultado = this.getSegundoOperando()*this.getPrimeiroOperando();
         }
         return resultado;
     }
 
     public double divisao(){
 
-        if(this.getX() > this.getY()){
-            resultado = this.getX()/this.getY();
+        if(this.getPrimeiroOperando() > this.getSegundoOperando()){
+            resultado = this.getPrimeiroOperando()/this.getSegundoOperando();
         }else{
-            resultado = this.getY()/this.getX();
+            resultado = this.getSegundoOperando()/this.getPrimeiroOperando();
         }
         return resultado;
     }
 
     public double restodivisao(){
 
-        if(this.getX() > this.getY()){
-            resultado = this.getX()%this.getY();
+        if(this.getPrimeiroOperando() > this.getSegundoOperando()){
+            resultado = this.getPrimeiroOperando()%this.getSegundoOperando();
         }else{
-            resultado = this.getY()%this.getX();
+            resultado = this.getSegundoOperando()%this.getPrimeiroOperando();
         }
         return resultado;
     }
